@@ -18,11 +18,11 @@
   }
   ,
   "production": {
-    "username": "ezpuqrk7d1ae595i",
-    "password": "agqw6iwg8snxjqks",
-    "port": 3308,
-    "database": "b7m8jpvcy0p5yr6p",
-    "host": "icopoghru9oezxh8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "zetm5vravk2cuarp",
+    "password": "lmj852cmzfn5c20w",
+    "port": 3306,
+    "database": "b2gvonxvelepxldm",
+    "host": "izm96dhhnwr2ieg0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
