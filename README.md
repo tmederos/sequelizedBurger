@@ -15,12 +15,10 @@ Check out the app running on heroku here:
 ---
 Technologies used
 * Node.js - https://nodejs.org/en/
-* MySQL - https://www.mysql.com/
 * Handlebars - http://handlebarsjs.com/
 * Bootstrap (http://getbootstrap.com)
 * body-parser NPM Package - https://www.npmjs.com/package/inquirer
 * express NPM Package - https://www.npmjs.com/package/express
-* mysql NPM Package - https://www.npmjs.com/package/mysql
 * handlebars NPM Package - https://www.npmjs.com/package/handlebars
 * express-handlbars NPM Package - https://www.npmjs.com/package/express-handlebars
 * sequelize - https://www.npmjs.com/package/sequelize
@@ -29,6 +27,5 @@ Built With
 * Sublime Text - Text Editor
 * Visual Studio Code - Text Editor
 * Bootstrap
-* MySql Workbench
 
 Author - Trish Mederos
