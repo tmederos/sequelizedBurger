@@ -6,7 +6,7 @@
 For this app I have Sequelized the Eat the Burger! app I made last week. I have removed all references to vanilla MySQL queries and replaced them with Sequelize queries. 
 
 ---
-Check out the app running on heroku here: 
+Check out the app running on heroku here: https://git.heroku.com/sheltered-plateau-76490.git
 
 ---
 # Screenshot
