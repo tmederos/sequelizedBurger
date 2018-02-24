@@ -8,13 +8,18 @@ var db = require("../models");
 
 // Select all burgers from the database and render them
 router.get("/", function(req, res) {
+    res.redirect( "/burgers" );
+});
+
+// Select all burgers from the database and render them
+router.get("/burgers", function(req, res) {
   db.Burgers.findAll({}).then(function(dbBurger) {
     var burgerObj = {
-      burgers: dbBurger
+      burger: dbBurger
     };
     console.log( "In Get/ findAll.");
     console.log( "burgerObj - "+ JSON.stringify( burgerObj, null, 2 ));
-    res.render("index", burgerObj);
+    return res.render("index", burgerObj);
   });
 });
 
@@ -24,6 +29,7 @@ router.get("/", function(req, res) {
 //
 // Insert a new burger to the database
 router.post("/", function(req, res) {
+    console.log(req.body);
     db.Burgers.create(req.body).then(function(dbBurger) {
       res.json(dbBurger);
       console.log(dbBurger);
@@ -31,6 +37,7 @@ router.post("/", function(req, res) {
         // res.redirect("/");
   });
 });
+
 
 // Update a burger's devoured status
 router.put("/:id", function(req,res) {
@@ -41,7 +48,7 @@ router.put("/:id", function(req,res) {
           id: req.params.id
       }
     }).then(function(dbBurger) {
-        console.log(result);
+        console.log(dbBurger);
         res.sendStatus(200);
         // res.redirect("/");
   });
@@ -54,7 +61,7 @@ router.delete("/:id", function(req,res) {
         id: req.params.id
       }
     }).then(function(dbBurger) {
-        console.log(result);
+        console.log(dbBurger);
         res.sendStatus(200);
       // res.redirect("/");
 
